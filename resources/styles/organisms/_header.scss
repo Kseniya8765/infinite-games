@@ -11,9 +11,5 @@
 @include media-breakpoint-down(lg) {
   .header {
     padding: 25px 0;
-
-    &__wrapper {
-      margin-left: auto;
-    }
   }
 }
