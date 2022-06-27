@@ -1,0 +1,152 @@
+@mixin headline {
+  font-family: $font-moderat;
+  font-weight: 700;
+  font-style: normal;
+  color: $metalic;
+}
+
+@mixin headline-1 {
+  @include headline;
+  font-size: 120px;
+  line-height: 96%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 41px;
+    line-height: 98%;
+  }
+}
+// @mixin btn-font {
+//   font-family: $font-rubik;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 18px;
+//   line-height: 22px;
+
+//   @include media-breakpoint-down(lg) {
+//     font-size: 16px;
+//     line-height: 20px;
+//   }
+// }
+@mixin headline-2 {
+  @include headline;
+  color: $gray;
+  font-size: 52px;
+  line-height: 135%;
+  letter-spacing: -0.05em;
+  text-transform: uppercase;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 26px;
+    line-height: 140%;
+  }
+}
+
+@mixin headline-3 {
+  @include headline;
+  font-size: 24px;
+  line-height: 127%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $white;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: 120%;
+  }
+}
+
+@mixin headline-4 {
+  @include headline;
+  font-size: 20px;
+  line-height: 127%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $white;
+}
+
+h1,
+.headline-1 {
+  @include headline-1;
+}
+
+h2,
+.headline-2 {
+  @include headline-2;
+}
+
+h3,
+.headline-3 {
+  @include headline-3;
+}
+
+h4,
+.headline-4 {
+  @include headline-4;
+}
+
+@mixin caption {
+  @include headline;
+  color: $white;
+  font-size: 24px;
+  line-height: 67px;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 18px;
+    line-height: 26px;
+  }
+}
+
+@mixin body-large {
+  font-family: $font-roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 137%;
+  letter-spacing: -0.03em;
+  color: $white;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 20px;
+    line-height: 140%;
+  }
+}
+
+@mixin body-small {
+  @include body-large;
+  font-size: 18px;
+  line-height: 137%;
+  @include media-breakpoint-down(lg) {
+    font-size: 16px;
+    line-height: 137%;
+  }
+}
+
+@mixin input {
+  font-family: $font-moderat;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 135%;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: $metalic;
+
+  @include media-breakpoint-down(lg) {
+    font-size: 24px;
+    line-height: 135%;
+  }
+}
+
+.body-large {
+  @include body-large;
+}
+
+.body-small {
+  @include body-small;
+}
+
+.caption {
+  @include caption;
+}

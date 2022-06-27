@@ -1,0 +1,12 @@
+a {
+  text-decoration: none;
+}
+
+@mixin body-link {
+  // @include body;
+  // @include accent-main;
+}
+
+.body-link {
+  @include body-link;
+}

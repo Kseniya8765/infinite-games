@@ -1,0 +1,16 @@
+.input {
+  @include input;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid $metalic;
+  padding-bottom: 14px;
+  max-width: 832px;
+  width: 100%;
+}
+
+@include media-breakpoint-down(xl) {
+  .input {
+    max-width: unset;
+    padding-bottom: 16px;
+  }
+}
