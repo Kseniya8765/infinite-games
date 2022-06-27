@@ -1,0 +1,29 @@
+.header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  &__item {
+    @include body-small;
+    list-style-type: none;
+  }
+
+  &__link {
+    color: $white;
+    padding-bottom: 5px;
+
+    &:hover {
+      border-bottom: 1px solid $metalic;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .header-nav {
+    justify-content: flex-end;
+
+    &__item:nth-child(-n + 2) {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,17 @@
+.header {
+  position: sticky;
+  top: 0;
+  background-color: $black;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+@include media-breakpoint-down(lg) {
+  .header {
+    padding: 25px 0;
+
+    &__wrapper {
+      margin-left: auto;
+    }
+  }
+}
