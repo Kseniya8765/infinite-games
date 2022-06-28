@@ -15,7 +15,6 @@
     position: absolute;
     top: 150px;
     left: 0;
-    padding: 0;
     max-width: 286px;
     width: 100%;
   }
@@ -32,7 +31,6 @@
     position: absolute;
     top: 80px;
     right: 0;
-    padding: 0;
     max-width: 329px;
     width: 100%;
   }
@@ -71,6 +69,7 @@
 
     &__background-img {
       display: none;
+
       &_mob {
         display: block;
       }
@@ -84,6 +83,7 @@
 
     &__background-right-img {
       display: none;
+
       &_mob {
         display: block;
       }
