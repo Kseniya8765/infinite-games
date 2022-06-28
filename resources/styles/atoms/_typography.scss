@@ -50,7 +50,6 @@
   line-height: 127%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: $white;
 
   @include media-breakpoint-between(lg, xxxl) {
     @include relativeSize(24);
