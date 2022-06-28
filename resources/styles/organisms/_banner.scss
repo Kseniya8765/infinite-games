@@ -25,7 +25,6 @@
 
   &__background-img {
     @include aspect-ratio-pseudo(423, 439);
-    width: 100%;
 
     &_mob {
       display: none;
