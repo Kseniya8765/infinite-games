@@ -1,0 +1,74 @@
+.banner {
+  background-color: $black;
+  padding-top: 100px;
+  padding-bottom: 80px;
+
+  &__wrapper {
+    position: relative;
+  }
+
+  &__big-img {
+    @include aspect-ratio-pseudo(1712, 775);
+    max-width: 1712px;
+
+    &_mob {
+      display: none;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 14%;
+    right: 23%;
+    z-index: 5;
+  }
+
+  &__background-img {
+    @include aspect-ratio-pseudo(423, 439);
+    width: 100%;
+
+    &_mob {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .banner {
+    padding-top: 70px;
+    padding-bottom: 44px;
+
+    &__background {
+      top: 12%;
+      right: 13%;
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .banner {
+    &__big-img {
+      display: none;
+
+      &_mob {
+        display: block;
+      }
+    }
+
+    &__background {
+      top: 25%;
+      right: 1%;
+      max-width: 259px;
+      width: 100%;
+    }
+
+    &__background-img {
+      display: none;
+
+      &_mob {
+        display: block;
+        @include aspect-ratio-pseudo(259, 270);
+      }
+    }
+  }
+}

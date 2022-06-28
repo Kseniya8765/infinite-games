@@ -5,6 +5,10 @@
   color: $metalic;
 }
 
+@mixin relativeSize($size) {
+  font-size: calc(#{$size} / 1920 * 100vw);
+}
+
 @mixin headline-1 {
   @include headline;
   font-size: 120px;
@@ -12,23 +16,16 @@
   letter-spacing: -0.04em;
   text-transform: uppercase;
 
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(120);
+  }
+
   @include media-breakpoint-down(lg) {
     font-size: 41px;
     line-height: 98%;
   }
 }
-// @mixin btn-font {
-//   font-family: $font-rubik;
-//   font-style: normal;
-//   font-weight: 500;
-//   font-size: 18px;
-//   line-height: 22px;
 
-//   @include media-breakpoint-down(lg) {
-//     font-size: 16px;
-//     line-height: 20px;
-//   }
-// }
 @mixin headline-2 {
   @include headline;
   color: $gray;
@@ -36,6 +33,10 @@
   line-height: 135%;
   letter-spacing: -0.05em;
   text-transform: uppercase;
+
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(52);
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 26px;
@@ -50,6 +51,10 @@
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: $white;
+
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(24);
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 20px;
@@ -92,6 +97,10 @@ h4,
   font-size: 24px;
   line-height: 67px;
 
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(24);
+  }
+
   @include media-breakpoint-down(lg) {
     font-size: 18px;
     line-height: 26px;
@@ -107,6 +116,10 @@ h4,
   letter-spacing: -0.03em;
   color: $white;
 
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(24);
+  }
+
   @include media-breakpoint-down(lg) {
     font-size: 20px;
     line-height: 140%;
@@ -117,6 +130,11 @@ h4,
   @include body-large;
   font-size: 18px;
   line-height: 137%;
+
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(18);
+  }
+
   @include media-breakpoint-down(lg) {
     font-size: 16px;
     line-height: 137%;
@@ -132,6 +150,10 @@ h4,
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: $metalic;
+
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(42);
+  }
 
   @include media-breakpoint-down(lg) {
     font-size: 24px;
