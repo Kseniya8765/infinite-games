@@ -1,0 +1,64 @@
+.slider-pagination {
+  &_mob {
+    display: none;
+  }
+
+  &__title {
+    @include headline-1;
+    cursor: pointer;
+    margin-bottom: 7px;
+    transition: color 0.3s ease;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .slider-pagination {
+    display: none;
+
+    &_mob {
+      display: block;
+    }
+
+    &__title_mob {
+      @include headline-1;
+      position: relative;
+      padding-left: 30px;
+      margin-bottom: 20px;
+      transition: all 0.3s ease;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+
+      &::after {
+        position: absolute;
+        content: '';
+        top: -5px;
+        right: 0;
+        width: 12px;
+        height: 54px;
+        opacity: 0.1;
+        background-image: url('/resources/images/static/stick.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+      }
+
+      &_active {
+        color: $black;
+
+        &::after {
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
