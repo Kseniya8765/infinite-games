@@ -1,5 +1,4 @@
 .slider {
-  position: relative;
   margin-top: 80px;
   margin-bottom: 281px;
 
@@ -9,10 +8,7 @@
   }
 
   &__wrapper {
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translate(-50%);
+    margin: auto 0;
   }
 }
 
