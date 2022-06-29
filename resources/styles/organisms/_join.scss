@@ -1,0 +1,38 @@
+.join {
+  background-color: $black;
+  background-image: url('/resources/images/static/background.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 256px;
+  padding-bottom: 128px;
+
+  &__subtitle {
+    margin-bottom: 40px;
+  }
+
+  &__text {
+    @include body-large;
+    color: $metalic;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .join {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 60px;
+    }
+
+    &__subtitle,
+    &__text {
+      margin-bottom: 28px;
+    }
+  }
+}
