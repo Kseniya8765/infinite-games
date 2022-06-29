@@ -13,10 +13,9 @@
 
   &__background {
     position: absolute;
-    top: 150px;
+    top: 15%;
     left: 0;
-    max-width: 286px;
-    width: 100%;
+    width: 16%;
   }
 
   &__background-img {
@@ -29,10 +28,9 @@
 
   &__background-right {
     position: absolute;
-    top: 80px;
+    top: 8%;
     right: 0;
-    max-width: 329px;
-    width: 100%;
+    width: 16%;
   }
 
   &__background-right-img {
@@ -49,11 +47,13 @@
     &__background {
       top: 100px;
       max-width: 188px;
+      width: 100%;
     }
 
     &__background-right {
       top: 50px;
       max-width: 216px;
+      width: 100%;
     }
   }
 }
@@ -65,6 +65,7 @@
     &__background {
       top: 0;
       max-width: 289px;
+      width: 100%;
     }
 
     &__background-img {
@@ -79,6 +80,7 @@
       top: unset;
       bottom: 0;
       max-width: 289px;
+      width: 100%;
     }
 
     &__background-right-img {
