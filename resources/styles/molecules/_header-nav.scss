@@ -22,8 +22,10 @@
   .header-nav {
     justify-content: flex-end;
 
-    &__item:nth-child(-n + 2) {
-      display: none;
+    &__item {
+      &_hidden {
+        display: none;
+      }
     }
   }
 }
