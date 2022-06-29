@@ -26,6 +26,8 @@
 
 /* Molecules */
 @import 'molecules/header-nav';
+@import 'molecules/slider-pagination';
+@import 'molecules/slider-text';
 @import 'molecules/footer-nav';
 
 /* Organisms */
@@ -33,4 +35,5 @@
 @import 'organisms/banner';
 @import 'organisms/text';
 @import 'organisms/join';
+@import 'organisms/slider';
 @import 'organisms/footer';

@@ -1,10 +1,19 @@
-
+import Slider from './slider';
+import Accordion from './accordion';
 
 
 window.addEventListener('DOMContentLoaded', async () => {
   window.refs = {
-    
 
+    slider: {
+      init: () => new Slider(),
+      selectors: ['.slider-text'],
+    },
+
+    accordion: {
+      init: () => new Accordion(),
+      selectors: ['.slider-pagination_mob'],
+    },
   };
 
   Object.keys(window.refs).forEach((ref) => {

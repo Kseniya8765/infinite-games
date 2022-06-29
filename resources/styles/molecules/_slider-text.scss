@@ -1,0 +1,35 @@
+.slider-text {
+  &__item {
+    color: $black;
+    margin-bottom: 25px;
+  }
+
+  &__content {
+    background-color: $white;
+    margin: auto 0;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .slider-text {
+    display: none;
+
+    &__content_mob {
+      margin-top: 40px;
+      padding-left: 30px;
+      max-width: 300px;
+      transition: max-height 0.5s ease;
+      overflow: hidden;
+      max-height: 0px;
+      height: unset;
+
+      &_active {
+        max-height: var(--max-height);
+      }
+    }
+
+    &__item {
+      margin-bottom: 24px;
+    }
+  }
+}
