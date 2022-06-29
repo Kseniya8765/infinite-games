@@ -1,0 +1,15 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: $black;
+  padding-top: 32px;
+  padding-bottom: 31px;
+}
+
+@include media-breakpoint-down(lg) {
+  .header {
+    padding: 25px 0;
+  }
+}
