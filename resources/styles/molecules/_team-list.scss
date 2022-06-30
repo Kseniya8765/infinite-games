@@ -1,0 +1,39 @@
+.team-list {
+  list-style-type: none;
+
+  &__name {
+    color: $gray;
+    margin-bottom: 36px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    $self: &;
+
+    &:hover {
+      color: $black;
+      #{$self}-sub {
+        display: inline;
+      }
+    }
+  }
+
+  &__name-sub {
+    @include headline-4;
+    color: $black;
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .team-list {
+    &__name {
+      color: $black;
+      margin-bottom: 26px;
+      cursor: auto;
+    }
+
+    &__name-sub {
+      color: $gray;
+      display: block;
+    }
+  }
+}
