@@ -1,11 +1,18 @@
 .input {
   @include input;
   outline: none;
-  border: none;
-  border-bottom: 1px solid $metalic;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid rgba($metalic, 0.6);
+  background-color: transparent;
   padding-bottom: 14px;
   max-width: 832px;
   width: 100%;
+
+  &::placeholder {
+    @include input;
+  }
 }
 
 @include media-breakpoint-down(xl) {

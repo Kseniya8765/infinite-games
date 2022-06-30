@@ -1,0 +1,51 @@
+.contact {
+  background-color: $black;
+  padding-top: 160px;
+  padding-bottom: 106px;
+
+  &__title {
+    @include headline-1;
+    margin-bottom: 173px;
+  }
+
+  &__form {
+    position: relative;
+  }
+
+  &__arrow {
+    position: absolute;
+    top: 17px;
+    left: 23px;
+    width: 56px;
+    height: 31px;
+    z-index: 2;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    cursor: pointer;
+    opacity: 1;
+    visibility: visible;
+    transition: opacity 0.3s;
+  }
+
+  &__text {
+    @include body-small;
+    color: rgba($metalic, 0.6);
+    margin-top: 8px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .contact {
+    padding-top: 60px;
+    padding-bottom: 180px;
+
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__text {
+      margin-top: 6px;
+    }
+  }
+}
