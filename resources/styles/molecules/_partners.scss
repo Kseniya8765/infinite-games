@@ -52,8 +52,6 @@
     }
 
     &__imgs {
-      display: flex;
-      align-items: center;
       flex-wrap: nowrap;
       width: fit-content;
       will-change: transform;
@@ -61,8 +59,6 @@
 
     &__scroll {
       justify-content: center;
-      display: flex;
-      align-items: center;
       will-change: transform;
       transform: translate3d(0px, 0px, 0px);
       width: max-content;
