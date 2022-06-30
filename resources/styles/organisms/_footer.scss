@@ -1,6 +1,18 @@
 .footer {
   background-color: $black;
   padding-bottom: 18px;
+
+  &__background {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 5;
+    width: 25%;
+  }
+
+  &__background-img {
+    @include aspect-ratio-pseudo(944, 639);
+  }
 }
 
 @include media-breakpoint-down(lg) {
