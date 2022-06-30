@@ -1,0 +1,118 @@
+.signup {
+  position: relative;
+  background-color: $black;
+  background-image: url('/resources/images/static/background-game.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 207px;
+
+  &__title {
+    @include headline-1;
+    margin-top: 130px;
+    margin-bottom: 72px;
+  }
+
+  &__btn {
+    &_mob {
+      display: none;
+    }
+  }
+
+  &__content {
+    margin-top: 230px;
+  }
+
+  &__text {
+    @include body-large;
+    margin-bottom: 40px;
+
+    &:last-of-type {
+      margin-bottom: 0;
+    }
+  }
+
+  &__background {
+    position: absolute;
+    top: 20%;
+    left: 47%;
+    transform: translate(-47%);
+    z-index: 5;
+    width: 13%;
+  }
+
+  &__background-img {
+    @include aspect-ratio-pseudo(239, 235);
+  }
+
+  &__background-small {
+    position: absolute;
+    bottom: 100px;
+    left: 27%;
+    transform: translate(-27%);
+    z-index: 5;
+    width: 8%;
+  }
+
+  &__background-small-img {
+    @include aspect-ratio-pseudo(109, 107);
+  }
+
+  &__background-mob {
+    display: none;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .signup {
+    padding-top: 60px;
+    padding-bottom: 100px;
+
+    &__title {
+      margin-top: 60px;
+      margin-bottom: 40px;
+    }
+
+    &__content {
+      margin-top: 0;
+    }
+
+    &__text {
+      margin-bottom: 28px;
+    }
+
+    &__btn {
+      display: none;
+
+      &_mob {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 60px;
+        min-height: 70px;
+      }
+    }
+
+    &__background {
+      top: 10%;
+      left: 65%;
+      transform: translate(-65%);
+      width: 14%;
+    }
+
+    &__background-small {
+      display: none;
+    }
+
+    &__background-mob {
+      display: block;
+      position: absolute;
+      top: 15%;
+      bottom: 100px;
+      right: 0;
+      z-index: 5;
+      width: 15%;
+    }
+  }
+}
