@@ -4,7 +4,7 @@ a {
   transition: color 0.3s ease;
 
   &:hover {
-    color: $gray;
+    color: rgba($metalic, 0.4);
   }
 }
 @mixin body-link {
