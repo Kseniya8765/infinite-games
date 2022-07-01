@@ -1,6 +1,6 @@
 import Slider from './slider';
 import Accordion from './accordion';
-import PositionSlider from './position-slider';
+import Tabs from './tabs';
 
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -16,9 +16,9 @@ window.addEventListener('DOMContentLoaded', async () => {
       selectors: ['.slider-pagination_mob'],
     },
 
-    positionSlider: {
+    tabs: {
       init: () => new PositionSlider(),
-      selectors: ['.team'],
+      selectors: ['.team__slider'],
     },
   };
 
