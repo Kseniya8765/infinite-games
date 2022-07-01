@@ -1,0 +1,43 @@
+.citation {
+  background-color: $black;
+  padding: 177px 0;
+
+  &__big-img {
+    position: relative;
+  }
+
+  &__block {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &__title {
+    color: $metalic;
+    margin-bottom: 22px;
+  }
+
+  &__img {
+    &_mob {
+      display: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .citation {
+    padding: 100px 0;
+
+    &__title {
+      margin-bottom: 80px;
+    }
+
+    &__img {
+      display: none;
+      &_mob {
+        display: block;
+      }
+    }
+  }
+}

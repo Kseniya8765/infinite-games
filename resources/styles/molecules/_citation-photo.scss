@@ -1,0 +1,27 @@
+.citation-photo {
+  position: relative;
+  &__name {
+    text-align: right;
+  }
+
+  &__author {
+    position: absolute;
+    top: -100px;
+    right: -120px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .citation-photo {
+    &__name {
+      text-align: left;
+    }
+
+    &__author {
+      position: absolute;
+      top: -80px;
+      right: -50px;
+      width: 55%;
+    }
+  }
+}
