@@ -10,7 +10,7 @@
 
   &__title {
     margin-top: 130px;
-    margin-bottom: 72px;
+    margin-bottom: 60px;
   }
 
   &__content {
@@ -54,6 +54,12 @@
 
   &__ball-mob {
     display: none;
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 }
 

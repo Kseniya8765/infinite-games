@@ -2,6 +2,9 @@
   background-color: $black;
   padding: 177px 0;
 
+  &__wrapper {
+    margin: 0 auto;
+  }
   &__big-img {
     position: relative;
   }
@@ -11,11 +14,11 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 70%;
   }
 
   &__title {
     color: $metalic;
-    margin-bottom: 22px;
   }
 
   &__img {
