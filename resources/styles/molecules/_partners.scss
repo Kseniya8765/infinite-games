@@ -39,7 +39,6 @@
       overflow: scroll;
       width: 100%;
       position: relative;
-      will-change: transform;
 
       &::-webkit-scrollbar {
         width: 0;
@@ -59,8 +58,6 @@
 
     &__scroll {
       justify-content: center;
-      will-change: transform;
-      transform: translate3d(0px, 0px, 0px);
       width: max-content;
     }
 

@@ -1,5 +1,12 @@
 .metalcore-soon {
   margin-top: 69px;
+  $self: &;
+
+  #{$self}__text {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &__title {
     margin-bottom: 40px;
@@ -11,10 +18,6 @@
 
     &_up {
       text-transform: uppercase;
-    }
-
-    &:last-of-type {
-      margin-bottom: 0;
     }
   }
 }
