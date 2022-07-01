@@ -4,7 +4,6 @@
   padding-bottom: 106px;
 
   &__title {
-    @include headline-1;
     margin-bottom: 173px;
   }
 
@@ -33,7 +32,6 @@
   }
 
   &__text {
-    @include body-small;
     color: rgba($metalic, 0.6);
     margin-top: 8px;
   }

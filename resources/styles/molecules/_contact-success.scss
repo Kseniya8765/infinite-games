@@ -3,13 +3,11 @@
   max-width: 367px;
 
   &__title {
-    @include input;
     text-transform: uppercase;
     margin-bottom: 12px;
   }
 
   &__text {
-    @include body-large;
     color: rgba($metalic, 0.6);
   }
 
