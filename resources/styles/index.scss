@@ -28,6 +28,9 @@
 @import 'molecules/header-nav';
 @import 'molecules/slider-pagination';
 @import 'molecules/slider-text';
+@import 'molecules/partners';
+@import 'molecules/metalcore-game';
+@import 'molecules/metalcore-soon';
 @import 'molecules/footer-nav';
 
 /* Organisms */
@@ -36,5 +39,6 @@
 @import 'organisms/text';
 @import 'organisms/join';
 @import 'organisms/slider';
+@import 'organisms/metalcore';
 @import 'organisms/signup';
 @import 'organisms/footer';

@@ -1,0 +1,58 @@
+.metalcore {
+  position: relative;
+  padding-top: 56px;
+  padding-bottom: 32px;
+  background-color: $black;
+  overflow: hidden;
+  z-index: 0;
+
+  &__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 110%;
+    opacity: 0.7;
+    z-index: -1;
+  }
+
+  &__subtitle {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logos {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  &__logo {
+    margin-right: 15px;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .metalcore {
+    &__video {
+      width: 180%;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .metalcore {
+    padding-top: 40px;
+    padding-bottom: 74px;
+    background-image: url('/resources/images/static/video-bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    &__video {
+      display: none;
+    }
+
+    &__logo {
+      margin-right: 12px;
+    }
+  }
+}
