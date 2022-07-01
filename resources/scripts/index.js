@@ -1,5 +1,6 @@
 import Slider from './slider';
 import Accordion from './accordion';
+import Validation from './validation';
 
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -14,7 +15,15 @@ window.addEventListener('DOMContentLoaded', async () => {
       init: () => new Accordion(),
       selectors: ['.slider-pagination_mob'],
     },
+
+    validation: {
+      init: () => new Validation(),
+      selectors: ['.contact__form'],
+    },
+  
   };
+
+  
 
   Object.keys(window.refs).forEach((ref) => {
     if (

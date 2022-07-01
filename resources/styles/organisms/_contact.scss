@@ -2,6 +2,7 @@
   background-color: $black;
   padding-top: 160px;
   padding-bottom: 106px;
+  $self: &;
 
   &__title {
     @include headline-1;
@@ -10,6 +11,10 @@
 
   &__form {
     position: relative;
+  }
+
+  &__input:focus::placeholder {
+    color: rgba($metalic, 0.6);
   }
 
   &__arrow {
@@ -32,6 +37,13 @@
     @include body-small;
     color: rgba($metalic, 0.6);
     margin-top: 8px;
+  }
+
+  &__error {
+    border-bottom: 1px solid $red;
+    // #{$self}__input {
+    //   color: $red !important;
+    // }
   }
 }
 
