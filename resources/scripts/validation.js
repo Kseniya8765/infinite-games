@@ -1,6 +1,7 @@
 export default class Validation {
   constructor() {
     this.submit = document.querySelector('.contact__btn');
+    this.label = document.querySelector('.contact__label');
     this.form = document.querySelector('.contact__email');
     this.success = document.querySelector('.contact-success');
     this.email = document.querySelector('.contact__input');
@@ -24,14 +25,12 @@ export default class Validation {
       this.email.classList.add('contact__error');
       const p = document.createElement('p');
       p.textContent = 'Please enter a valid email';
-      p.classList.add = 'body-small';
-      p.style.color = '#ee3c3c';
-      p.style.textAlign = 'right';
-
-      this.email.after(p);
+      p.className = 'contact__error-label';
+      this.label.append(p);
     } else {
       this.isMailValid = true;
       this.email.classList.remove('contact__error');
+      p.className.remove('contact__error-label');
     }
   };
 
@@ -43,7 +42,7 @@ export default class Validation {
     this.submit.disabled = !this.checkValidity();
   };
 
-  submited = () => {
+  submited = (e) => {
     if (this.checkValidity()) {
       this.form.reset();
       this.form.style.display = 'none';
