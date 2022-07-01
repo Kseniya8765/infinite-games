@@ -1,5 +1,6 @@
 import Slider from './slider';
 import Accordion from './accordion';
+import PositionSlider from './position-slider';
 
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -13,6 +14,11 @@ window.addEventListener('DOMContentLoaded', async () => {
     accordion: {
       init: () => new Accordion(),
       selectors: ['.slider-pagination_mob'],
+    },
+
+    positionSlider: {
+      init: () => new PositionSlider(),
+      selectors: ['.team'],
     },
   };
 
