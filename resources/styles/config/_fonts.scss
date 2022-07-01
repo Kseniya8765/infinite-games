@@ -10,7 +10,9 @@
 
 @include font-face('Roboto', '/Roboto/Roboto-Regular.ttf', 400);
 @include font-face('Moderat', '/Moderat/Moderat-Bold.woff2', 700);
+@include font-face('Moderat', '/Moderat/Moderat-Extended-Bold.woff2', 700);
 @include font-face('Moderat', '/Moderat/Moderat-Medium.woff2', 500);
 
 $font-moderat: 'Moderat Trial', sans-serif;
+$font-extra-moderat: 'Moderat Trial', sans-serif;
 $font-roboto: 'Roboto', sans-serif;
