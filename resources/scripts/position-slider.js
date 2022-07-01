@@ -1,4 +1,4 @@
-import Swiper , { Autoplay} from 'swiper';
+import Swiper, { Autoplay } from 'swiper';
 
 export default class PositionSlider {
   constructor() {
@@ -8,20 +8,16 @@ export default class PositionSlider {
   init() {
     const sections = document.querySelectorAll('.team');
     sections.forEach((s) => {
-      const pagination = [...s.querySelectorAll('.team-list__name')];
       const mySwiper = new Swiper(s.querySelector('.team__slider'), {
-       modules: [ Autoplay] ,
-       autoplay: {
-        delay: 2500,
-        disableOnInteraction: false,
-      },
+        modules: [Autoplay],
+        // autoplay: {
+        //   delay: 3000,
+        // },
+        slidesPerView:7,
+        direction: 'vertical',
       });
-      pagination.forEach((p, index) => {
-        p.addEventListener('mouseover', function (e) {
-          e.preventDefault();
-          mySwiper.slideTo(index);
-        });
-      });
+
+
     });
   }
 }
