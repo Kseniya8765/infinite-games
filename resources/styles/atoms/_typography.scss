@@ -11,6 +11,26 @@
 
 @mixin headline-1 {
   @include headline;
+  font-family: $font-moderat-extra;
+  font-size: 120px;
+  line-height: 96%;
+  letter-spacing: -0.04em;
+  text-transform: uppercase;
+
+  @include media-breakpoint-between(lg, xxxl) {
+    @include relativeSize(120);
+  }
+
+  @include media-breakpoint-down(lg) {
+    font-size: 41px;
+    line-height: 98%;
+  }
+}
+
+@mixin headline-em {
+  @include headline;
+  font-family: $font-moderat-extramedium;
+  font-weight: 501;
   font-size: 120px;
   line-height: 96%;
   letter-spacing: -0.04em;
@@ -75,6 +95,10 @@ h1,
   @include headline-1;
 }
 
+.headline-em {
+  @include headline-em;
+}
+
 h2,
 .headline-2 {
   @include headline-2;
@@ -92,6 +116,7 @@ h4,
 
 @mixin caption {
   @include headline;
+  font-family: $font-moderat-extra;
   color: $white;
   font-size: 24px;
   line-height: 67px;
@@ -141,7 +166,7 @@ h4,
 }
 
 @mixin input {
-  font-family: $font-moderat;
+  font-family: $font-moderat-medium;
   font-style: normal;
   font-weight: 500;
   font-size: 42px;
