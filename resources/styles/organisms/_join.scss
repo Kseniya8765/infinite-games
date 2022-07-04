@@ -20,6 +20,10 @@
       margin-bottom: 0;
     }
   }
+
+  &__content {
+    margin-top: 20px;
+  }
 }
 
 @include media-breakpoint-down(lg) {

@@ -1,0 +1,84 @@
+.metalcore-game {
+  margin-top: 107px;
+
+  &__title {
+    @include headline-1;
+    margin-bottom: 50px;
+  }
+
+  &__text-left {
+    margin-bottom: 65px;
+    width: 40%;
+  }
+
+  &__btns {
+    display: flex;
+    align-items: center;
+
+    &_mob {
+      display: none;
+    }
+  }
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-right: 60px;
+  }
+
+  &__btn-discord {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+
+@include media-breakpoint-down(xxl) {
+  .metalcore-game {
+    &__btns {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    &__btn {
+      width: 100%;
+    }
+
+    &__btn-discord {
+      max-width: unset;
+      width: 100%;
+      border-top: none;
+    }
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .metalcore-game {
+    &__title {
+      margin-bottom: 40px;
+    }
+
+    &__text-left {
+      width: 100%;
+      margin-bottom: 40px;
+    }
+
+    &__btns {
+      display: none;
+
+      &_mob {
+        display: flex;
+        flex-direction: column;
+        margin-top: 60px;
+      }
+    }
+
+    &__btn,
+    &__btn-discord {
+      min-height: 70px;
+      padding: 0;
+    }
+  }
+}
