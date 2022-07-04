@@ -1,0 +1,17 @@
+.contact-success {
+  display: none;
+  max-width: 367px;
+
+  &__title {
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+
+  &__text {
+    color: rgba($metalic, 0.6);
+  }
+
+  &_active {
+    display: block;
+  }
+}

@@ -1,7 +1,9 @@
 import Slider from './slider';
 import Accordion from './accordion';
+import Validation from './validation';
 import Tabs from './tabs';
 import Animation from './animation';
+
 
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -17,6 +19,13 @@ window.addEventListener('DOMContentLoaded', async () => {
       selectors: ['.slider-pagination_mob'],
     },
 
+
+    validation: {
+      init: () => new Validation(),
+      selectors: ['.contact__form'],
+    },
+  
+
     // tabs: {
     //   init: () => new PositionSlider(),
     //   selectors: ['.team__slider'],
@@ -27,6 +36,8 @@ window.addEventListener('DOMContentLoaded', async () => {
       selectors: ['.animation'],
     },
   };
+
+  
 
   Object.keys(window.refs).forEach((ref) => {
     if (
