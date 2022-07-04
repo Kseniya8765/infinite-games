@@ -11,10 +11,6 @@
     position: relative;
   }
 
-  &__input:focus::placeholder {
-    color: rgba($metalic, 0.6);
-  }
-
   &__arrow {
     position: absolute;
     top: 17px;
@@ -26,9 +22,6 @@
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.3s;
   }
 
   &__text {
@@ -51,10 +44,6 @@
     @include body-small;
     color: $red;
     text-align: right;
-
-    &_inactive {
-      display: none;
-    }
   }
 }
 
