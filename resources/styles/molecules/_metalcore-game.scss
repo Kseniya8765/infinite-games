@@ -25,6 +25,12 @@
     align-items: center;
     justify-content: space-between;
     margin-right: 60px;
+
+    &:hover {
+      i {
+        transform: translateX(-65%);
+      }
+    }
   }
 
   &__btn-discord {
@@ -32,6 +38,12 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+
+    &:hover {
+      i {
+        transform: translateX(-65%);
+      }
+    }
   }
 }
 

@@ -27,6 +27,33 @@
   &__background-img {
     @include aspect-ratio-pseudo(656, 378);
   }
+
+  &__hidden {
+    height: 20px;
+    visibility: hidden;
+    color: transparent;
+  }
+
+  &__name {
+    cursor: pointer;
+  }
+
+  &__position {
+    display: none;
+    color: $black;
+  }
+
+  .swiper-pagination-bullet {
+    color: $metalic;
+    margin-bottom: 36px;
+  }
+
+  .swiper-pagination-bullet-active {
+    color: $black !important;
+    .team__position {
+      display: inline;
+    }
+  }
 }
 
 @include media-breakpoint-down(lg) {

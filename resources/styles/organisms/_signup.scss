@@ -60,6 +60,12 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    &:hover {
+      i {
+        transform: translateX(-65%);
+      }
+    }
   }
 }
 
