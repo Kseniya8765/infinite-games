@@ -21,6 +21,11 @@
     color: $metalic;
   }
 
+  // &__img-wrapper {
+  //   @include aspect-ratio-pseudo(1294, 950);
+  //   max-width: 1294px;
+  // }
+
   &__img {
     &_mob {
       display: none;
