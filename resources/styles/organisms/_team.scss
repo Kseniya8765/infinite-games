@@ -1,7 +1,7 @@
 .team {
   position: relative;
   padding-top: 160px;
-  padding-bottom: 49px;
+  padding-bottom: 30px;
 
   &__title {
     @include headline-1;
@@ -29,14 +29,14 @@
   }
 
   &__hidden {
-    height: 20px;
+    height: 1px;
     visibility: hidden;
     color: transparent;
   }
 
-  &__name {
-    cursor: pointer;
-  }
+  // &__name {
+  //   cursor: pointer;
+  // }
 
   &__position {
     display: none;
@@ -71,6 +71,23 @@
 
     &__background {
       display: none;
+    }
+
+    &__position {
+      display: block;
+      color: $gray;
+    }
+
+    .swiper-pagination-bullet {
+      color: $black;
+      margin-bottom: 26px;
+    }
+
+    .swiper-pagination-bullet-active {
+      .team__position {
+        display: block;
+        color: $gray;
+      }
     }
   }
 }

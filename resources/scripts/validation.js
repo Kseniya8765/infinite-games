@@ -1,6 +1,6 @@
 export default class Validation {
   constructor() {
-    this.submit = document.querySelector('.contact__btn');
+    this.submit = document.querySelector('.contact__arrow');
     this.label = document.querySelector('.contact__label');
     this.form = document.querySelector('.contact__email');
     this.success = document.querySelector('.contact-success');

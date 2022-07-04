@@ -15,7 +15,7 @@
     position: absolute;
     top: 15%;
     left: 0;
-    width: 16%;
+    width: 15%;
   }
 
   &__background-img {
@@ -61,6 +61,11 @@
 @include media-breakpoint-down(lg) {
   .text {
     text-align: left;
+    padding-bottom: 135px;
+
+    &__title {
+      margin-bottom: 27px;
+    }
 
     &__background {
       top: 0;

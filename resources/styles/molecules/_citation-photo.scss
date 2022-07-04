@@ -1,14 +1,13 @@
 .citation-photo {
-  position: relative;
   &__name {
     text-align: right;
-    margin-right: 150px;
+    margin-right: 114px;
   }
 
   &__author {
     position: absolute;
-    top: -80px;
-    right: 40px;
+    top: 75px;
+    right: 0;
   }
 }
 
@@ -16,13 +15,14 @@
   .citation-photo {
     &__name {
       text-align: left;
+      margin-right: unset;
     }
 
     &__author {
       position: absolute;
-      top: -80px;
-      right: -50px;
-      width: 55%;
+      top: 180px;
+      right: -30px;
+      width: 50%;
     }
   }
 }

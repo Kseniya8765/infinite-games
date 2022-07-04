@@ -28,9 +28,9 @@
 
   &__ball {
     position: absolute;
-    top: 20%;
-    left: 47%;
-    transform: translate(-47%);
+    top: 18%;
+    left: 53%;
+    transform: translate(-53%);
     z-index: 5;
     width: 13%;
   }
@@ -41,11 +41,11 @@
 
   &__ball-small {
     position: absolute;
-    bottom: 100px;
-    left: 27%;
-    transform: translate(-27%);
+    bottom: 110px;
+    left: 30%;
+    transform: translate(-30%);
     z-index: 5;
-    width: 8%;
+    width: 6%;
   }
 
   &__ball-small-img {
@@ -60,6 +60,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    min-width: 194px;
 
     &:hover {
       i {
@@ -77,6 +78,7 @@
     &__title {
       margin-top: 60px;
       margin-bottom: 40px;
+      padding-right: 30px;
     }
 
     &__content {
@@ -85,10 +87,11 @@
 
     &__text {
       margin-bottom: 28px;
+      padding-right: 30px;
     }
 
     &__btn {
-      padding: 20px 58px 20px 0px;
+      padding: 20px 0px 20px 0px;
     }
 
     &__btn {

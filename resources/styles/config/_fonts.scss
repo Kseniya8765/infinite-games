@@ -10,18 +10,10 @@
 
 @include font-face('Roboto', '/Roboto/Roboto-Regular.ttf', 400);
 @include font-face('Roboto', '/Roboto/Roboto-Bold.ttf', 700);
-@include font-face('Moderat Trial', '/Moderat/Moderat-Bold.woff2', 700);
-@include font-face(
-  'Moderat Trial',
-  '/Moderat/Moderat-Extended-Bold.woff2',
-  700
-);
-@include font-face('Moderat Trial', '/Moderat/Moderat-Medium.woff2', 500);
-@include font-face(
-  'Moderat Trial',
-  '/Moderat/Moderat-Extended-Medium.woff2',
-  501
-);
+@include font-face('Moderat', '/Moderat/Moderat-Bold.woff2', 700);
+@include font-face('Moderat', '/Moderat/Moderat-Extended-Bold.woff2', 700);
+@include font-face('Moderat', '/Moderat/Moderat-Medium.woff2', 500);
+@include font-face('Moderat', '/Moderat/Moderat-Extended-Medium.woff2', 501);
 
 $font-moderat: 'Moderat Trial', sans-serif;
 $font-moderat-extra: 'Moderat Trial', sans-serif;

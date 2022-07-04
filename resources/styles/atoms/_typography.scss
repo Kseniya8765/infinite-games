@@ -30,10 +30,11 @@
 @mixin headline-em {
   @include headline;
   font-family: $font-moderat-extramedium;
+  font-style: italic;
   font-weight: 501;
   font-size: 120px;
   line-height: 93%;
-  letter-spacing: -0.04em;
+  letter-spacing: -0.075em;
   text-transform: uppercase;
 
   @include media-breakpoint-between(lg, xxxl) {

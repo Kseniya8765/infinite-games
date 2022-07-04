@@ -1,22 +1,38 @@
 .footer {
   background-color: $black;
   padding-bottom: 18px;
+  position: relative;
+  z-index: 0;
 
   &__background {
     position: absolute;
+    display: block;
     bottom: 0;
     right: 0;
-    z-index: 5;
+    z-index: -1;
     width: 50%;
   }
 
   &__background-img {
     @include aspect-ratio-pseudo(944, 639);
+
+    &_mob {
+      display: none;
+    }
   }
 }
 
 @include media-breakpoint-down(lg) {
   .footer {
     padding-bottom: 20px;
+    z-index: 0;
+
+    &__background-img {
+      display: none;
+
+      &_mob {
+        display: block;
+      }
+    }
   }
 }

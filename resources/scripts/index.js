@@ -11,7 +11,7 @@ window.addEventListener('DOMContentLoaded', async () => {
 
     slider: {
       init: () => new Slider(),
-      selectors: ['.slider-text'],
+      selectors: ['.slider'],
     },
 
     accordion: {
@@ -29,9 +29,9 @@ window.addEventListener('DOMContentLoaded', async () => {
       selectors: ['.animation'],
     },
 
-    slider: {
+    sliderPosition: {
       init: () => new PositionSlider(),
-      selectors: ['.team__hidden'],
+      selectors: ['.team'],
     },
   };
 

@@ -5,6 +5,7 @@
   &__wrapper {
     margin: 0 auto;
   }
+
   &__big-img {
     position: relative;
     display: flex;
@@ -16,11 +17,12 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 70%;
+    width: 60%;
   }
 
   &__title {
     color: $metalic;
+    padding: 0 50px;
   }
 
   &__img-wrapper {
@@ -41,6 +43,19 @@
 
     &__title {
       margin-bottom: 80px;
+      padding: 0;
+    }
+
+    &__block {
+      top: 46%;
+      left: 50%;
+      transform: translate(-46%, -50%);
+    }
+
+    &__img-wrapper {
+      width: unset;
+      max-width: unset;
+      height: unset;
     }
 
     &__img {

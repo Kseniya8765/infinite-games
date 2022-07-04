@@ -68,6 +68,8 @@
 
 @include media-breakpoint-down(lg) {
   .metalcore-game {
+    margin-top: 44px;
+
     &__title {
       margin-bottom: 40px;
     }
@@ -91,6 +93,9 @@
     &__btn-discord {
       min-height: 70px;
       padding: 0;
+      span {
+        padding-right: 50px;
+      }
     }
   }
 }

@@ -14,8 +14,8 @@
     }
 
     &:hover {
+      @include headline-em;
       color: $black;
-      font-weight: 501;
     }
   }
 }
@@ -54,7 +54,9 @@
       }
 
       &_active {
+        @include headline-em;
         color: $black;
+        letter-spacing: -0.04em;
 
         &::after {
           opacity: 1;
