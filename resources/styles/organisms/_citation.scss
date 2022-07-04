@@ -7,6 +7,8 @@
   }
   &__big-img {
     position: relative;
+    display: flex;
+    justify-content: center;
   }
 
   &__block {
@@ -21,10 +23,10 @@
     color: $metalic;
   }
 
-  // &__img-wrapper {
-  //   @include aspect-ratio-pseudo(1294, 950);
-  //   max-width: 1294px;
-  // }
+  &__img-wrapper {
+    @include aspect-ratio-pseudo(1292, 595);
+    max-width: 1292px;
+  }
 
   &__img {
     &_mob {
