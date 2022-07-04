@@ -1,12 +1,17 @@
 a {
+  color: $metalic;
   text-decoration: none;
-}
+  transition: color 0.3s ease;
 
+  &:hover {
+    color: rgba($metalic, 0.4);
+  }
+}
 @mixin body-link {
   // @include body;
   // @include accent-main;
 }
 
-.body-link {
-  @include body-link;
+.underline {
+  text-decoration: underline;
 }
