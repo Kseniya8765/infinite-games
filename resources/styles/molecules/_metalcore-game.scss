@@ -89,10 +89,15 @@
       }
     }
 
-    &__btn,
+    &__btn {
+      padding: 21px 0;
+      span {
+        padding-right: 50px;
+      }
+    }
+
     &__btn-discord {
-      min-height: 70px;
-      padding: 0;
+      padding: 14px 0;
       span {
         padding-right: 50px;
       }
