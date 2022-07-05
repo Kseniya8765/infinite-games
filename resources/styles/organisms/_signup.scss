@@ -64,8 +64,19 @@
 
     &:hover {
       i {
-        transform: translateX(-65%);
+        animation: arrow 0.3s ease-out;
       }
+    }
+  }
+  @keyframes arrow {
+    0% {
+      transform: translateX(65%);
+    }
+    50% {
+      transform: translateX(65%);
+    }
+    100% {
+      transform: translateX(-65%);
     }
   }
 }
