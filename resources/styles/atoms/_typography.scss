@@ -14,7 +14,7 @@
   font-family: $font-moderat-extra;
   font-size: 120px;
   line-height: 96%;
-  letter-spacing: -0.04em;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
 
   @include media-breakpoint-between(lg, xxxl) {
@@ -34,7 +34,7 @@
   font-weight: 501;
   font-size: 120px;
   line-height: 93%;
-  letter-spacing: -0.075em;
+  letter-spacing: 0.075em;
   text-transform: uppercase;
 
   @include media-breakpoint-between(lg, xxxl) {
@@ -52,7 +52,7 @@
   color: $black;
   font-size: 52px;
   line-height: 135%;
-  letter-spacing: -0.05em;
+  letter-spacing: 0.05em;
   text-transform: uppercase;
 
   @include media-breakpoint-between(lg, xxxl) {
@@ -69,7 +69,7 @@
   @include headline;
   font-size: 24px;
   line-height: 127%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
 
   @include media-breakpoint-between(lg, xxxl) {
@@ -86,7 +86,7 @@
   @include headline;
   font-size: 20px;
   line-height: 127%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: $white;
 }
@@ -172,7 +172,7 @@ h4,
   font-weight: 500;
   font-size: 42px;
   line-height: 135%;
-  letter-spacing: -0.03em;
+  letter-spacing: 0.03em;
   color: $metalic;
 
   @include media-breakpoint-between(lg, xxxl) {
