@@ -50,6 +50,10 @@ export default class Validation {
     }
   };
   init() {
+    this.email.addEventListener('focus', () => {
+      this.submit.style.left ="unset";
+      this.submit.style.right ="0";
+    });
     this.email.addEventListener('change', () => this.validation());
     this.form.addEventListener('submit', (event) => this.handleForm(event));
     this.email.addEventListener('change', () => this.check());
