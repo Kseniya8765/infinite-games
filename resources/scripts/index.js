@@ -3,7 +3,7 @@ import Accordion from './accordion';
 import Validation from './validation';
 import Animation from './animation';
 import PositionSlider from './position-slider';
-
+import Smooth from './smooth';
 
 
 window.addEventListener('DOMContentLoaded', async () => {
@@ -32,6 +32,11 @@ window.addEventListener('DOMContentLoaded', async () => {
     sliderPosition: {
       init: () => new PositionSlider(),
       selectors: ['.team'],
+    },
+
+    smooth: {
+      init: () => new Smooth(),
+      selectors: ['.scrollup'],
     },
   };
 
