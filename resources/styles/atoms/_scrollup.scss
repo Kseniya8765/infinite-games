@@ -1,0 +1,14 @@
+.scrollup {
+  display: none;
+  position: fixed;
+  right: 120px;
+  bottom: 140px;
+
+  i {
+    transform: rotate(-90deg);
+  }
+
+  &_show {
+    display: block;
+  }
+}

@@ -24,6 +24,7 @@
 @import 'atoms/lazyload';
 @import 'atoms/input';
 @import 'atoms/animation';
+@import 'atoms/scrollup';
 
 /* Molecules */
 @import 'molecules/header-nav';
@@ -50,3 +51,5 @@
 @import 'organisms/citation';
 @import 'organisms/contact';
 @import 'organisms/footer';
+@import 'organisms/terms';
+@import 'organisms/terms-content';

@@ -1,0 +1,25 @@
+.terms {
+  background-color: $black;
+
+  &__title {
+    padding-top: 140px;
+    margin-bottom: 100px;
+  }
+
+  &__subtitle {
+    margin-bottom: 48px;
+  }
+}
+
+@include media-breakpoint-down(lg) {
+  .terms {
+    &__title {
+      padding-top: 100px;
+      margin-bottom: 56px;
+    }
+
+    &__subtitle {
+      margin-bottom: 40px;
+    }
+  }
+}
