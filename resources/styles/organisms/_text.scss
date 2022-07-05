@@ -1,9 +1,9 @@
 .text {
   position: relative;
   padding: 140px 0;
-  text-align: center;
 
   &__title {
+    text-align: center;
     margin-bottom: 40px;
 
     &:last-of-type {
@@ -60,10 +60,10 @@
 
 @include media-breakpoint-down(lg) {
   .text {
-    text-align: left;
     padding-bottom: 135px;
 
     &__title {
+      text-align: left;
       margin-bottom: 27px;
     }
 

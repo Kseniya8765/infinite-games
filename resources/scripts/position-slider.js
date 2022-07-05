@@ -18,11 +18,6 @@ export default class PositionSlider {
         autoplay: {
           delay: 3000,
         },
-        // breakpoints: {
-        //   320: {
-        //     autoplay: false
-        //   }
-        // },
         direction: 'vertical',
         pagination: {
           el: '.team__pagination',

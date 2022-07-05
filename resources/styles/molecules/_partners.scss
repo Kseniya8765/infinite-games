@@ -37,7 +37,7 @@
     &__mob {
       display: block;
       overflow: scroll;
-      width: 100%;
+      width: 109%;
       position: relative;
 
       &::-webkit-scrollbar {
@@ -46,8 +46,11 @@
     }
 
     &__img {
-      max-height: 28px;
       margin-right: 50px;
+
+      img {
+        object-fit: contain;
+      }
     }
 
     &__imgs {

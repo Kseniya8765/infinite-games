@@ -56,13 +56,30 @@
     }
   }
 }
-
+@include media-breakpoint-down(xl) {
+  .team {
+    &__position {
+      font-size: 16px;
+      margin-left: 10px;
+    }
+  }
+}
 @include media-breakpoint-down(lg) {
   .team {
     padding: 100px 0;
+    padding-bottom: 92px;
 
     &__title {
       margin-bottom: 40px;
+    }
+
+    .swiper-pagination-bullet {
+      color: $metalic;
+      margin-bottom: 36px;
+
+      &:last-of-type {
+        margin-bottom: 0;
+      }
     }
 
     &__text {
@@ -76,6 +93,7 @@
 
     &__position {
       display: block;
+      font-size: 20px;
       margin-left: 0;
       margin-top: 4px;
       color: $gray;
