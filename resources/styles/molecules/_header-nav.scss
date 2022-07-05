@@ -15,9 +15,10 @@
 
   &__link {
     color: $metalic;
-    padding-bottom: 5px;
+    padding-bottom: 1px;
 
     &:hover {
+      color: $metalic;
       border-bottom: 1px solid $metalic;
     }
   }
