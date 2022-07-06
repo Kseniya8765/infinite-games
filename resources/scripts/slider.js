@@ -3,7 +3,6 @@ import Swiper, { EffectFade, Pagination } from 'swiper';
 export default class Slider {
   constructor() {
     this.sections = document.querySelectorAll('.slider');
-
     this.init();
   }
 
