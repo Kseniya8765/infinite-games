@@ -1,0 +1,14 @@
+@keyframes arrow {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(65%);
+  }
+  75% {
+    transform: translateX(-65%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

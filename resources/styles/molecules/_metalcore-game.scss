@@ -46,17 +46,6 @@
       }
     }
   }
-  @keyframes arrow {
-    0% {
-      transform: translateX(65%);
-    }
-    50% {
-      transform: translateX(65%);
-    }
-    100% {
-      transform: translateX(-65%);
-    }
-  }
 }
 
 @include media-breakpoint-down(xxl) {
