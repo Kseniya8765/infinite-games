@@ -12,3 +12,15 @@
     display: block;
   }
 }
+
+@include media-breakpoint-down(lg) {
+  .scrollup {
+    right: 10px;
+    bottom: 40px;
+
+    i {
+      width: 24px;
+      height: 14px;
+    }
+  }
+}
