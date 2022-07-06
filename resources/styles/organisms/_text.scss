@@ -1,14 +1,17 @@
 .text {
   position: relative;
   padding: 140px 0;
+  $self: &;
+
+  #{$self}__title {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &__title {
     text-align: center;
     margin-bottom: 40px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 
   &__background {

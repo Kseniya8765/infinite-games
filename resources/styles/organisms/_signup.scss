@@ -7,6 +7,13 @@
   background-size: cover;
   padding-top: 80px;
   padding-bottom: 213px;
+  $self: &;
+
+  #{$self}__text {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &__title {
     margin-top: 130px;
@@ -20,10 +27,6 @@
   &__text {
     @include body-large;
     margin-bottom: 40px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 
   &__ball {

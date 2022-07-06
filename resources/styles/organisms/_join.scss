@@ -6,6 +6,13 @@
   background-size: cover;
   padding-top: 256px;
   padding-bottom: 127px;
+  $self: &;
+
+  #{$self}__text {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 
   &__subtitle {
     margin-bottom: 40px;
@@ -15,10 +22,6 @@
     @include body-large;
     color: $metalic;
     margin-bottom: 40px;
-
-    &:last-of-type {
-      margin-bottom: 0;
-    }
   }
 
   &__content {

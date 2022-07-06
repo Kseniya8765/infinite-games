@@ -12,12 +12,8 @@
     &:last-of-type {
       margin-bottom: 0;
     }
-
-    // &:hover {
-    //   @include headline-em;
-    //   color: $black;
-    // }
   }
+
   .swiper-pagination-bullet-active {
     @include headline-em;
     color: $black !important;
