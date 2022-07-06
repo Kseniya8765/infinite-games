@@ -11,16 +11,25 @@
   &_show {
     display: block;
   }
+
+  &_mobile {
+    display: none;
+  }
 }
 
 @include media-breakpoint-down(lg) {
   .scrollup {
-    right: 10px;
-    bottom: 40px;
+    display: none;
 
     i {
-      width: 24px;
-      height: 14px;
+      transform: rotate(0deg);
+    }
+
+    &_mobile {
+      display: block;
+      position: fixed;
+      right: 10px;
+      bottom: 40px;
     }
   }
 }
