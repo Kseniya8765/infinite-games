@@ -6,7 +6,7 @@
   border-right: none;
   border-bottom: 1px solid rgba($metalic, 0.6);
   background-color: transparent;
-  padding-bottom: 14px;
+  padding-bottom: 10px;
   max-width: 832px;
   width: 100%;
 
@@ -22,6 +22,6 @@
 @include media-breakpoint-down(xl) {
   .input {
     max-width: unset;
-    padding-bottom: 11px;
+    padding-bottom: 14px;
   }
 }

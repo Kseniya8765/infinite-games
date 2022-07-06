@@ -8,7 +8,7 @@
 
   &__text-left {
     margin-bottom: 65px;
-    width: 40%;
+    max-width: 341px;
   }
 
   &__btns {
@@ -24,7 +24,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-right: 60px;
+    margin-right: 73px;
 
     &:hover {
       i {
@@ -38,6 +38,7 @@
     align-items: center;
     justify-content: space-between;
     width: 100%;
+    margin-right: 63px;
 
     &:hover {
       i {
@@ -73,6 +74,7 @@
       max-width: unset;
       width: 100%;
       border-top: none;
+      margin-right: 0;
     }
   }
 }
@@ -86,8 +88,8 @@
     }
 
     &__text-left {
-      width: 100%;
-      margin-bottom: 40px;
+      max-width: 258px;
+      margin-bottom: 37px;
     }
 
     &__btns {
@@ -108,10 +110,18 @@
     }
 
     &__btn-discord {
-      padding: 14px 0;
+      padding: 21px 0;
       span {
         padding-right: 50px;
       }
+    }
+  }
+}
+
+@include media-breakpoint-down(sm) {
+  .metalcore-game {
+    &__btn-discord {
+      padding: 14px 0;
     }
   }
 }

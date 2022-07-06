@@ -22,6 +22,7 @@
 @include icon('logo', $icons + '/infinite.svg', 85, 14);
 @include icon('twitter', $icons + '/twitter.svg', 37, 30);
 @include icon('arrow', $icons + '/arrow.svg', 56, 31);
+@include icon('arrow-up', $icons + '/arrow-up.svg', 44, 44);
 
 @include media-breakpoint-down(sm) {
   @include icon('logo', $icons + '/infinite.svg', 98, 16);

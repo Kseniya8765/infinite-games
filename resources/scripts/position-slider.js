@@ -41,6 +41,14 @@ export default class PositionSlider {
           mySwiper.autoplay.start();
         });
       })
+
+      const pag = s.querySelectorAll('.swiper-pagination-bullet');
+
+      pag.forEach((p, index) => {
+        p.addEventListener('mouseover', () => {
+          mySwiper.slideTo(index);
+        });
+      });
     });
  
   }
