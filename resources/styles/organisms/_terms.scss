@@ -1,13 +1,23 @@
 .terms {
   background-color: $black;
 
+  &-content {
+    &_space {
+      ul {
+        margin: 29px 0 40px 0 !important;
+      }
+    }
+  }
+
   &__title {
-    padding-top: 140px;
+    padding-top: 144px;
     margin-bottom: 100px;
+    letter-spacing: 0.075em;
   }
 
   &__subtitle {
     margin-bottom: 48px;
+    letter-spacing: -0.045em;
   }
 }
 

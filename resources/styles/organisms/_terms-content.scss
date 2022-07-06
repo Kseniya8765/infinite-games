@@ -4,24 +4,28 @@
 
   p {
     @include body-large;
-    margin-bottom: 40px;
+    margin-bottom: 29px;
     color: rgba($metalic, 0.8);
   }
 
   h2 {
     color: $metalic;
-    margin-top: 100px;
+    margin-top: 105px;
     margin-bottom: 48px;
   }
 
   h4 {
-    margin-bottom: 20px;
+    margin-bottom: 21px;
+  }
+
+  ul {
+    margin: 48px 0;
   }
 
   li {
     @include body-large;
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
     color: rgba($metalic, 0.8);
     list-style-type: none;
     margin-left: 27px;
